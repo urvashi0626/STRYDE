@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STRYDE | Fuel Your Game. Own Your Moment.</title>
+  <meta name="description" content="STRYDE sports gear: cricket bats, basketballs and performance jerseys. Build your cart and send your order on WhatsApp or email.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cpath d='M16 50 30 14h14L30 50Z' fill='%23C8FF00'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <p class="container">Gear Up for Your Game — Shop STRYDE.</p>
+  </div>
+
+  <!-- Sticky header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="STRYDE, back to top">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-word">STRYDE</span>
+      </a>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products" data-action="filter" data-filter="all">Shop</a></li>
+          <li><a href="#products" data-action="filter" data-filter="cricket">Cricket</a></li>
+          <li><a href="#products" data-action="filter" data-filter="basketball">Basketball</a></li>
+          <li><a href="#products" data-action="filter" data-filter="sportswear">Sportswear</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="search-toggle" aria-expanded="false" aria-controls="search-panel" aria-label="Search products">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+        </button>
+        <button type="button" class="icon-btn cart-btn" id="cart-button" data-action="open-cart" aria-label="Open cart, 0 items">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V7a3 3 0 0 1 6 0v1"/></svg>
+          <span class="cart-count is-empty" id="cart-count" aria-hidden="true">0</span>
+        </button>
+        <button type="button" class="icon-btn menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span class="menu-bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="search-panel" id="search-panel" hidden>
+      <form class="container search-form" id="search-form" role="search">
+        <label for="search-input" class="visually-hidden">Search products</label>
+        <input id="search-input" type="search" placeholder="Search bats, basketballs, jerseys" autocomplete="off" maxlength="60">
+        <button class="btn btn-lime" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <h1 class="hero-title" id="hero-title">Push beyond limits.</h1>
+        <p class="hero-text">Everything you need to play harder, train smarter, and perform better.</p>
+        <div class="hero-actions">
+          <a class="btn btn-lime btn-lg" href="#products" data-action="filter" data-filter="all">Shop now</a>
+          <a class="btn btn-outline-light btn-lg" href="#categories">Explore sports</a>
+        </div>
+        <p class="hero-tagline">Fuel Your Game. Own Your Moment.</p>
+      </div>
+    </section>
+
+    <!-- Shop by sport -->
+    <section class="section section-dark" id="categories" aria-labelledby="categories-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="categories-title">Shop by sport</h2>
+          <p class="section-lede">Gear for Every Game. Pick your sport and go straight to the kit.</p>
+        </div>
+        <ul class="sport-grid">
+          <li>
+            <a class="sport-tile" href="#products" data-action="filter" data-filter="cricket">
+              <span class="media sport-media" data-fallback="Cricket"><img src="https://i.ibb.co/gZLTCYLW/bat.jpg" alt="" loading="lazy" width="800" height="1000"></span>
+              <span class="sport-info">
+                <span class="sport-name">Cricket</span>
+                <span class="sport-sub">Bats made for clean, confident strokes</span>
+                <span class="sport-cta">Shop cricket</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="sport-tile" href="#products" data-action="filter" data-filter="basketball">
+              <span class="media sport-media" data-fallback="Basketball"><img src="https://i.ibb.co/gLVdp6y5/basket-ball.jpg" alt="" loading="lazy" width="800" height="1000"></span>
+              <span class="sport-info">
+                <span class="sport-name">Basketball</span>
+                <span class="sport-sub">Match balls with grip you can trust</span>
+                <span class="sport-cta">Shop basketball</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="sport-tile" href="#products" data-action="filter" data-filter="sportswear">
+              <span class="media sport-media" data-fallback="Sportswear"><img src="https://i.ibb.co/ZRJsbvFP/jerseys.jpg" alt="" loading="lazy" width="800" height="1000"></span>
+              <span class="sport-info">
+                <span class="sport-name">Sportswear</span>
+                <span class="sport-sub">Jerseys that keep up from warm-up to whistle</span>
+                <span class="sport-cta">Shop sportswear</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Featured products (rendered by script.js from the PRODUCTS list) -->
+    <section class="section section-light" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-head section-head-row">
+          <div>
+            <h2 class="section-title" id="products-title">Featured products</h2>
+            <p class="section-lede">Built for Your Performance. Choose a quantity, then add to cart or buy now.</p>
+          </div>
+          <div class="filter-chips" role="group" aria-label="Filter products by sport">
+            <button type="button" class="chip" data-action="filter" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="chip" data-action="filter" data-filter="cricket" aria-pressed="false">Cricket</button>
+            <button type="button" class="chip" data-action="filter" data-filter="basketball" aria-pressed="false">Basketball</button>
+            <button type="button" class="chip" data-action="filter" data-filter="sportswear" aria-pressed="false">Sportswear</button>
+          </div>
+        </div>
+        <p class="price-note" id="price-note" hidden>Prices shown are sample prices. STRYDE confirms the final price when you place your order.</p>
+        <p class="visually-hidden" id="product-status" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="no-results" id="no-results" hidden>
+          <p>No products match “<span id="no-results-term"></span>”.</p>
+          <button type="button" class="btn btn-dark" data-action="clear-search">Show all products</button>
+        </div>
+        <noscript><p class="no-results">Turn on JavaScript to browse products and place orders.</p></noscript>
+      </div>
+    </section>
+
+    <!-- Why choose STRYDE -->
+    <section class="section section-lime" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <h2 class="section-title" id="why-title">Why choose STRYDE</h2>
+        <ul class="why-grid">
+          <li class="why-item">
+            <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="4" y="4" width="10" height="10"/><rect x="18" y="4" width="10" height="10"/><rect x="4" y="18" width="10" height="10"/><rect x="18" y="18" width="10" height="10"/></svg>
+            <h3>Gear for Every Game</h3>
+            <p>Cricket, basketball and sportswear in one place, picked for players who train as hard as they play.</p>
+          </li>
+          <li class="why-item">
+            <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" aria-hidden="true"><path d="M18 3 6 18h9l-2 11 13-16h-9l1-10Z"/></svg>
+            <h3>Built for Your Performance</h3>
+            <p>Grip, balance, comfort and durability: the details that show up on match day.</p>
+          </li>
+          <li class="why-item">
+            <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" aria-hidden="true"><path d="M5 6h22v15H14l-6 5v-5H5V6Z"/></svg>
+            <h3>Simple and Convenient Ordering</h3>
+            <p>No account and no card details. Add to cart, enter your address and send your order on WhatsApp or email.</p>
+          </li>
+        </ul>
+
+        <div class="how">
+          <h3 class="how-title">How ordering works</h3>
+          <ol class="how-steps">
+            <li><strong>Build your cart.</strong> Choose products and quantities.</li>
+            <li><strong>Add delivery details.</strong> Name, mobile, email and address.</li>
+            <li><strong>Press Send.</strong> We open WhatsApp or your email app with the order written out. You send it.</li>
+            <li><strong>STRYDE replies.</strong> The store confirms stock, delivery and payment with you directly.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (details come from CONTACT_DETAILS in script.js) -->
+    <section class="section section-dark" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <div>
+          <h2 class="section-title" id="contact-title">Contact us</h2>
+          <p class="section-lede">Questions about sizes, stock or an order you've sent? Get in touch and include your order reference if you have one.</p>
+        </div>
+        <div>
+          <ul class="contact-list" id="contact-list"></ul>
+          <p class="contact-fallback" id="contact-fallback" hidden></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="logo" href="#home" aria-label="STRYDE, back to top">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="logo-word">STRYDE</span>
+        </a>
+        <p class="footer-tagline">Fuel Your Game. Own Your Moment.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#products" data-action="filter" data-filter="all">Shop all</a></li>
+          <li><a href="#products" data-action="filter" data-filter="cricket">Cricket</a></li>
+          <li><a href="#products" data-action="filter" data-filter="basketball">Basketball</a></li>
+          <li><a href="#products" data-action="filter" data-filter="sportswear">Sportswear</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">Orders are sent from your own WhatsApp or email app and confirmed by STRYDE directly. This site takes no payments and does not store your delivery details.</p>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> STRYDE. All rights reserved.</p>
+      <button type="button" class="link-btn" data-action="open-cart">View cart</button>
+    </div>
+  </footer>
+
+  <!-- Product details -->
+  <dialog class="modal modal-product" id="product-dialog" aria-labelledby="product-dialog-title">
+    <div class="modal-panel">
+      <button type="button" class="icon-btn modal-close" data-action="close-dialog" aria-label="Close product details">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="product-detail" id="product-dialog-body"></div>
+    </div>
+  </dialog>
+
+  <!-- Cart drawer -->
+  <dialog class="drawer" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="drawer-panel">
+      <div class="drawer-head">
+        <h2 id="cart-title" tabindex="-1">Your cart <span id="cart-head-count"></span></h2>
+        <button type="button" class="icon-btn" data-action="close-dialog" aria-label="Close cart">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="drawer-body" id="cart-body"></div>
+      <div class="drawer-foot" id="cart-foot" hidden></div>
+    </div>
+  </dialog>
+
+  <!-- Checkout: order form, send step, self-reported confirmation -->
+  <dialog class="modal modal-checkout" id="checkout-dialog" aria-labelledby="checkout-title">
+    <div class="modal-panel checkout-panel">
+      <div class="checkout-head">
+        <h2 id="checkout-title" tabindex="-1">Checkout</h2>
+        <button type="button" class="icon-btn" data-action="close-dialog" aria-label="Close checkout">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+
+      <div id="checkout-form-view">
+        <form id="checkout-form" class="checkout-grid" novalidate>
+          <div class="checkout-fields">
+            <div class="form-alert" id="form-alert" role="alert" tabindex="-1" hidden></div>
+            <p class="form-intro">Fields marked <span class="req" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</p>
+
+            <fieldset>
+              <legend>Your details</legend>
+              <div class="field">
+                <label for="co-name">Full name <span class="req" aria-hidden="true">*</span></label>
+                <input id="co-name" name="name" type="text" autocomplete="name" maxlength="80" required aria-describedby="co-name-error">
+                <p class="field-error" id="co-name-error"></p>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="co-mobile">Mobile number <span class="req" aria-hidden="true">*</span></label>
+                  <div class="input-prefix">
+                    <span aria-hidden="true">+91</span>
+                    <input id="co-mobile" name="mobile" type="tel" inputmode="tel" autocomplete="tel-national" maxlength="16" placeholder="98765 43210" required aria-describedby="co-mobile-hint co-mobile-error">
+                  </div>
+                  <p class="field-hint" id="co-mobile-hint">10-digit Indian mobile number</p>
+                  <p class="field-error" id="co-mobile-error"></p>
+                </div>
+                <div class="field">
+                  <label for="co-email">Email <span class="req" aria-hidden="true">*</span></label>
+                  <input id="co-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" required aria-describedby="co-email-error">
+                  <p class="field-error" id="co-email-error"></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Delivery address</legend>
+              <div class="field">
+                <label for="co-address">Full delivery address <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="co-address" name="address" rows="3" autocomplete="street-address" maxlength="300" required aria-describedby="co-address-hint co-address-error"></textarea>
+                <p class="field-hint" id="co-address-hint">House or flat number, building, street, area and landmark</p>
+                <p class="field-error" id="co-address-error"></p>
+              </div>
+              <div class="field-row field-row-3">
+                <div class="field">
+                  <label for="co-city">City <span class="req" aria-hidden="true">*</span></label>
+                  <input id="co-city" name="city" type="text" autocomplete="address-level2" maxlength="60" required aria-describedby="co-city-error">
+                  <p class="field-error" id="co-city-error"></p>
+                </div>
+                <div class="field">
+                  <label for="co-state">State <span class="req" aria-hidden="true">*</span></label>
+                  <select id="co-state" name="state" autocomplete="address-level1" required aria-describedby="co-state-error">
+                    <option value="">Select state</option>
+                  </select>
+                  <p class="field-error" id="co-state-error"></p>
+                </div>
+                <div class="field">
+                  <label for="co-pin">PIN code <span class="req" aria-hidden="true">*</span></label>
+                  <input id="co-pin" name="pin" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="7" required aria-describedby="co-pin-error">
+                  <p class="field-error" id="co-pin-error"></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="co-notes">Order notes <span class="optional">(optional)</span></label>
+              <textarea id="co-notes" name="notes" rows="3" maxlength="500" aria-describedby="co-notes-hint co-notes-error"></textarea>
+              <p class="field-hint" id="co-notes-hint">Jersey size, delivery timing, or anything else STRYDE should know.</p>
+              <p class="field-error" id="co-notes-error"></p>
+            </div>
+
+            <div class="field field-check">
+              <input id="co-confirm" name="confirm" type="checkbox" required aria-describedby="co-confirm-error">
+              <label for="co-confirm">I confirm my delivery details are correct. <span class="req" aria-hidden="true">*</span></label>
+              <p class="field-error" id="co-confirm-error"></p>
+            </div>
+          </div>
+
+          <aside class="checkout-summary" aria-labelledby="summary-title">
+            <h3 class="summary-title" id="summary-title">Order summary</h3>
+            <div id="checkout-summary-items"></div>
+            <dl class="totals" id="checkout-totals"></dl>
+            <div class="send-box">
+              <p class="send-explain">We'll open WhatsApp or your email app with your order written out. <strong>Your order is only sent when you press Send there.</strong></p>
+              <button type="button" class="btn btn-lime btn-block btn-lg" id="send-whatsapp" data-action="send" data-channel="whatsapp">Place order via WhatsApp</button>
+              <button type="button" class="btn btn-dark btn-block btn-lg" id="send-email" data-action="send" data-channel="email">Place order via email</button>
+              <p class="send-unavailable" id="send-unavailable" hidden>Online ordering is temporarily unavailable. Please check back soon.</p>
+              <p class="fine-print">No payment is taken on this site. Your details are only used to write the order message and are not saved on this device.</p>
+            </div>
+          </aside>
+        </form>
+      </div>
+
+      <div id="checkout-confirm-view" hidden></div>
+      <div id="checkout-done-view" hidden></div>
+    </div>
+  </dialog>
+
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
