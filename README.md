@@ -68,6 +68,9 @@ const DELIVERY_FEE = 0;                    // flat fee in INR (0 = confirmed by 
 
 Works on any static host: **GitHub Pages**, Netlify or Vercel. For GitHub Pages, go to **Settings → Pages**, choose the `main` branch, and save.
 
+
+The site is live at https://urvashi0626.github.io/STRYDE/
+
 ## License
 
 MIT
